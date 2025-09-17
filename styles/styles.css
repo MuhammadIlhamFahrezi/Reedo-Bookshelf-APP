@@ -1,0 +1,541 @@
+* {
+  box-sizing: border-box;
+  scroll-margin-top: 15px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(242, 246, 249);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header {
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-website {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-website i {
+  font-size: 3.5rem;
+  background: linear-gradient(45deg, #ff8f2e, #ffc36a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo-website strong {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-website .ree {
+  color: #ff8f2e;
+}
+
+.logo-website .do {
+  color: rgb(2, 0, 91);
+}
+
+.nama-website {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgb(2, 0, 91);
+  padding: 80px 0px;
+  border-top-right-radius: 100px;
+}
+
+.nama-website h1 {
+  writing-mode: sideways-lr;
+  text-orientation: mixed;
+  font-size: 1.6rem;
+  font-style: italic;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  width: 100%;
+  padding-right: 20px;
+  gap: 20px;
+}
+
+section {
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+section h2 {
+  margin-top: 0;
+  color: rgb(2, 0, 91);
+  font-size: 1.3rem;
+  border-bottom: 2px solid #ff8f2e;
+  padding-bottom: 10px;
+}
+
+.bagian-utama {
+  background: linear-gradient(135deg, rgb(2, 0, 91) 0%, #3a2a7c 100%);
+  border-radius: 8px;
+  color: white;
+}
+
+.konten-utama {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.teks-utama {
+  flex: 1;
+}
+
+.judul-utama {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #ff8f2e;
+}
+
+.judul-utama i {
+  font-size: 1.6rem;
+  color: #ff8f2e;
+}
+
+.judul-utama h2 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: white;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+}
+
+.teks-utama p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin: 0;
+}
+
+.statistik-utama {
+  display: flex;
+  gap: 20px;
+}
+
+.item-statistik {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+  min-width: 110px;
+}
+
+.item-statistik:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.angka-statistik {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffc36a;
+  margin-bottom: 8px;
+}
+
+.label-statistik {
+  font-size: 0.85rem;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.fitur-utama {
+  background: linear-gradient(135deg, #ff8f2e 0%, #ffc36a 100%);
+  border-radius: 8px;
+}
+
+.fitur-utama h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin: 0 0 18px 0;
+  padding-bottom: 15px;
+  border-bottom: 3px solid rgb(2, 0, 91);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fitur-utama h3 i {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.tombol-aksi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tombol-aksi-item {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s ease;
+  flex: 1;
+  min-width: 180px;
+}
+
+.tombol-aksi-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.tombol-aksi-item i {
+  font-size: 1rem;
+  color: white;
+}
+
+.form-grup-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-grup-input > div {
+  flex: 1;
+}
+
+.form-grup-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: rgb(2, 0, 91);
+}
+
+.form-grup-input input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-grup-input input:focus {
+  outline: none;
+  border-color: #ff8f2e;
+}
+
+.aksi-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aksi-form > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aksi-form label {
+  font-weight: 500;
+  color: rgb(2, 0, 91);
+}
+
+.aksi-form input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #ff8f2e;
+}
+
+#bookFormSubmit {
+  background: linear-gradient(45deg, #ff8f2e, #ffc36a);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+#bookFormSubmit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#bookFormSubmit span {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+#searchBook {
+  display: flex;
+  align-items: end;
+  gap: 15px;
+}
+
+#searchBook label {
+  font-weight: 500;
+  color: rgb(2, 0, 91);
+  margin-bottom: 5px;
+  display: block;
+}
+
+#searchBookTitle {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#searchBookTitle:focus {
+  outline: none;
+  border-color: #ff8f2e;
+}
+
+#searchSubmit {
+  background-color: rgb(2, 0, 91);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+#searchSubmit:hover {
+  background-color: rgb(30, 20, 110);
+}
+
+.status-bacaan {
+  display: flex;
+  gap: 20px;
+}
+
+.status-bacaan > section {
+  flex: 1;
+}
+
+#incompleteBookList,
+#completeBookList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+[data-testid="bookItem"] {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-testid="bookItem"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+[data-testid="bookItemTitle"] {
+  margin: 0 0 8px 0;
+  color: rgb(2, 0, 91);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+[data-testid="bookItemAuthor"],
+[data-testid="bookItemYear"] {
+  margin: 5px 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+[data-testid="bookItem"] > div {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+[data-testid="bookItem"] button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[data-testid="bookItemIsCompleteButton"] {
+  background-color: #28a745;
+  color: white;
+}
+
+[data-testid="bookItemIsCompleteButton"]:hover {
+  background-color: #218838;
+}
+
+[data-testid="bookItemDeleteButton"] {
+  background-color: #dc3545;
+  color: white;
+}
+
+[data-testid="bookItemDeleteButton"]:hover {
+  background-color: #c82333;
+}
+
+[data-testid="bookItemEditButton"] {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+[data-testid="bookItemEditButton"]:hover {
+  background-color: #e0a800;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  header {
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+  }
+
+  .logo-website {
+    height: auto;
+    padding: 10px;
+  }
+
+  .nama-website {
+    height: auto;
+    padding: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+  }
+
+  .nama-website h1 {
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .konten-utama {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .judul-utama h2 {
+    font-size: 1.6rem;
+  }
+
+  .statistik-utama {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .item-statistik {
+    min-width: 100px;
+    padding: 15px;
+  }
+
+  .angka-statistik {
+    font-size: 2rem;
+  }
+
+  .tombol-aksi {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tombol-aksi-item {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+    min-width: auto;
+  }
+
+  .form-grup-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .aksi-form {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  #searchBook {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  #searchBook > div {
+    width: 100%;
+  }
+
+  #searchBookTitle {
+    width: 100%;
+    flex: none;
+  }
+
+  #searchSubmit {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  .status-bacaan {
+    flex-direction: column;
+  }
+
+  [data-testid="bookItem"] > div {
+    flex-wrap: wrap;
+  }
+}
